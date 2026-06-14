@@ -110,9 +110,9 @@
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-pacman-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-pacman.svg">
-  <img alt="Pacman Activity Graph" src="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-pacman.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/pacman-contribution-graph.svg" width="100%">
 </picture>
 <br><br>
 
