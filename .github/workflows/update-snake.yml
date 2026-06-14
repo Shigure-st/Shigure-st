@@ -1,28 +1,27 @@
-name: Generate Pacman
+name: generate pacman game
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-
-# ↓ここから追加（書き込み権限を完全に許可する）
-permissions:
-  contents: write
-# ↑ここまで追加
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
-      - name: Generate Github Contribution Grid Pacman
-        uses: Platane/snk@v3
+      - name: generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-pacman.svg?palette=github-dark&color_snake=yellow&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
-            dist/github-pacman-dark.svg?palette=github-dark&color_snake=yellow&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
-      - name: Push Pacman SVG to output branch
+      - name: push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
