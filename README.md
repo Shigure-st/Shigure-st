@@ -109,11 +109,7 @@
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com/?user=Shigure-st&theme=radical" alt="GitHub Streak" />
 </p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub Activity Graph" src="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-contribution-grid-snake.svg" />
-</picture>
+<img width="100%" src="https://github-readme-activity-graph.vercel.com/graph?username=あなたのGitHubユーザー名&theme=react-dark&area=true&hide_border=true" alt="Pacman Activity Graph" />
 <br><br>
 
 <br>
