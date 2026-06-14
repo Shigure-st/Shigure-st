@@ -109,7 +109,11 @@
   <img width="400px" src="https://github-readme-streak-stats.herokuapp.com/?user=Shigure-st&theme=radical" alt="GitHub Streak" />
 </p>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.com/graph?username=あなたのGitHubユーザー名&theme=react-dark&area=true&hide_border=true" alt="Pacman Activity Graph" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-pacman-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-pacman.svg">
+  <img alt="Pacman Activity Graph" src="https://raw.githubusercontent.com/Shigure-st/Shigure-st/output/github-pacman.svg" />
+</picture>
 <br><br>
 
 <br>
