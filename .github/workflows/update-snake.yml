@@ -5,6 +5,11 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+# ↓ここから追加（書き込み権限を完全に許可する）
+permissions:
+  contents: write
+# ↑ここまで追加
+
 jobs:
   build:
     runs-on: ubuntu-latest
