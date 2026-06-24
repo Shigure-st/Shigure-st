@@ -11,7 +11,7 @@ on:
 jobs:
   generate:
     permissions:
-      contents: write
+      contents: write   # ←これが超重要です！
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -22,7 +22,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
 
       - name: push to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
